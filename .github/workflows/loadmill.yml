@@ -1,0 +1,25 @@
+name: Run Loadmill Test Plan
+
+on:
+  push:
+    branches:
+      - main  # Change this if you want to trigger on another branch
+
+jobs:
+  loadmill-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18  # Ensure compatibility
+
+      - name: Install Loadmill CLI
+        run: npm install -g loadmill-cli
+
+      - name: Run Loadmill Test Plan
+        run: loadmill d90b3e55-1054-4ef7-885f-399f411e147b --test-plan -w -t iKDmpFveDlE0RR8mGIiniXlankIigmsXqekCeSmW
