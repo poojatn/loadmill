@@ -19,4 +19,4 @@ jobs:
           node-version: '20'
 
       - name: Run Loadmill Test Plan
-        run: npx loadmill d90b3e55-1054-4ef7-885f-399f411e147b --test-plan -w -t ${{ secrets.LOADMILL_API_TOKEN }}
+        run: npx loadmill d90b3e55-1054-4ef7-885f-399f411e147b --test-plan -w -t ${{iKDmpFveDlE0RR8mGIiniXlankIigmsXqekCeSmW}}
