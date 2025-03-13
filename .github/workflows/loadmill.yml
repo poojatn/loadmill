@@ -18,9 +18,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install Loadmill CLI from GitHub
-        run: npm install -g loadmill/loadmill-cli
+      - name: Install Loadmill CLI via HTTPS
+        run: npm install -g https://github.com/loadmill/loadmill-cli
 
       - name: Run Loadmill Test Plan
-
         run: loadmill d90b3e55-1054-4ef7-885f-399f411e147b --test-plan -w -t iKDmpFveDlE0RR8mGIiniXlankIigmsXqekCeSmW
