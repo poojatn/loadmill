@@ -19,4 +19,4 @@ jobs:
           node-version: '20'
 
       - name: Run Loadmill Test Plan
-        run: npx loadmill d90b3e55-1054-4ef7-885f-399f411e147b --test-plan -w -t iKDmpFveDlE0RR8mGIiniXlankIigmsXqekCeSmW
+        run: npx loadmill 351be1b3-b66f-4dbf-820d-5533758d6bf1 --test-plan -w -t lmANYb8JT4NrvqXMpHGwABBPT0bxUsMTQ6LLvsKg
